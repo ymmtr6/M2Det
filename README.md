@@ -91,7 +91,7 @@ pip install opencv-python,tqdm
 ```
 - Clone this repository.
 ```Shell
-git clone https://github.com/qijiezhao/CFENet.git
+git clone https://github.com/qijiezhao/M2Det.git
 ```
 - Compile the nms and coco tools:
 
@@ -106,7 +106,7 @@ sh make.sh
 
 **We provide a M2Det512_vgg pretrained model for demonstration(visualization):**
 
-First, download the pretrained [m2det512_vgg.pth](https://pan.baidu.com/s/1LDkpsQfpaGq_LECQItxRFQ) file. Then, move the file to weights/.
+First, download the pretrained m2det512_vgg.pth([baidu cloud](https://pan.baidu.com/s/1LDkpsQfpaGq_LECQItxRFQ),[google drive](https://drive.google.com/file/d/1NM1UDdZnwHwiNDxhcP-nndaWj24m-90L/view?usp=sharing)) file. Then, move the file to weights/.
 
 ```Shell
   python demo.py -c=configs/m2det512_vgg.py -m=weights/m2det512_vgg.pth --show
@@ -163,6 +163,7 @@ Please cite the following paper if you feel M2Det useful to your research
   author    = {Qijie Zhao and
                Tao Sheng and
                Yongtao Wang and
+               Zhi Tang and
                Ying Chen and
                Ling Cai and
                Haibing Lin},
